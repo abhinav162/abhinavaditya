@@ -14,11 +14,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Quantico:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="primary-header flex">
+    <header id="home" class="primary-header flex">
         <div>
             <img src="assets/logo.png" alt="Abhinav Aditya" class="logo">
         </div>
@@ -29,24 +30,37 @@
 
         <nav>
             <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                <li><a style="" href="index.html">Home</a></li>
-                <li><a style="" href="about.html">About</a></li>
-                <li><a style="" href="skills.html">Skills</a></li>
-                <li><a style="" href="projects.html">Projects</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="jumbotron" style="background-color: rgb(211, 211, 211);">
-                        <h1>Abhinav Aditya</h1>
-                        <p>Full Stack Developer</p>
-                        <p><a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a></p>
-                    </div>
-                </div>
+    <div class="home flex">
+        <h1 class="heading-2">Hi there!
+            <br> I’m <span class="name-span">Abhinav</span> <br> Student, Programmer &amp; Graphic Designer.
+        </h1>
+    </div>
+
+    <div id="about" class="about">
+        <div class="about-container">
+            <div class="profilepic">
+                <img src="assets/profilepic.jpeg" alt="Profile Picture">
+            </div>
+
+            <div class="about-text flex">
+                <p>
+                    <span class="about-span" style="font-size: 30px; margin-bottom: 20px;">
+                        About Me
+                    </span>
+                    <br> <br> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                </p>
             </div>
         </div>
     </div>

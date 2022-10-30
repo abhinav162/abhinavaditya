@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: hsl(var(--clr-dark));
     line-height: 1.5;
@@ -53,7 +57,71 @@ body {
     color: white;
 }
 
-.primary-navigation li :hover{
+.primary-navigation li :hover {
+    color: rgb(80, 255, 252);
+}
+
+.home {
+    margin: 4rem;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    color: white;
+    text-align: left;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.heading-2 {
+    width: 100%;
+}
+
+.home h1 {
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Aclonica', sans-serif;
+    line-height: 1.5;
+}
+
+.name-span {
+    color: rgb(80, 255, 252);
+    font-size: 80px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 4rem;
+}
+
+.about-container img {
+    width: 400px;
+    height: 680px;
+    border-radius: 2%;
+    margin: 2rem;
+    filter:contrast(1.1);
+}
+
+.about-container p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Quantico', sans-serif;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.profilepic {
+    margin: 6rem;
+}
+
+.about-text {
+    margin: 20rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.about-span {
     color: rgb(80, 255, 252);
 }
 
