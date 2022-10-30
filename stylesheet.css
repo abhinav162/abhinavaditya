@@ -1,0 +1,116 @@
+body {
+    background-color: hsl(var(--clr-dark));
+    line-height: 1.5;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    background-image: url(/assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+/* Primary Header */
+
+.logo {
+    margin: 1.5rem;
+    margin-left: 4rem;
+    width: 320px;
+    height: 60px;
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primary-navigation {
+    --gap: clamp(1.5rem, 5vw, 3.5rem);
+    --underline-gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0 0% 0% / 0.5);
+    border-radius: 5rem 0 0 5rem;
+    font-size: medium;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+
+.primary-navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.primary-navigation li :hover{
+    color: rgb(80, 255, 252);
+}
+
+@media (max-width: 35em) {
+    .logo {
+        margin: 1.8rem;
+        margin-left: rem;
+        width: 240px;
+        height: 45px;
+    }
+
+    .primary-navigation {
+        --gap: 3em;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 35%;
+        margin: 0;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem;
+        border-radius: 0;
+        transform: translate(100%);
+        transition: transform 350ms ease-in-out;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translate(0);
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-color: transparent;
+        background: url(assets/hamburger-open.svg);
+        background-repeat: no-repeat;
+        width: 3rem;
+        border: 0;
+        aspect-ratio: 1;
+        top: 3rem;
+        right: 2rem;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(assets/hamburger-close.svg);
+    }
+}
+
+@media (min-width: 35em) {
+    .primary-navigation {
+        --gap: clamp(1.5rem, 5vw, 3rem);
+        padding-block: 2rem;
+        padding-inline: clamp(3rem, 8vw, 7rem)
+    }
+}
+
+/* General */
+.flex {
+    display: flex;
+    gap: var(--gap, 2rem);
+}

@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav Aditya</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav id = "primary-navigation" class="primary-navigation flex">
-            <div class="logo">
-                <a href="index.html">Abhinav Aditya</a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+    <header class="primary-header flex">
+        <div>
+            <img src="assets/logo3.png" alt="Abhinav Aditya" class="logo">
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li><a style="" href="index.html">Home</a></li>
+                <li><a style="" href="about.html">About</a></li>
+                <li><a style="" href="skills.html">Skills</a></li>
+                <li><a style="" href="projects.html">Projects</a></li>
+            </ul>
         </nav>
     </header>
-    
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron" style="background-color: rgb(211, 211, 211);">
+                        <h1>Abhinav Aditya</h1>
+                        <p>Full Stack Developer</p>
+                        <p><a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
