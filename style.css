@@ -77,6 +77,10 @@ body {
     text-underline-offset: 0.2rem;
 } */
 
+.active{
+    font-weight: 600;
+}
+
 .greetings-container {
     display:block;
     margin-left: 3.5rem;
@@ -152,10 +156,6 @@ body {
 
     .name-span{
         font-size: 4rem;
-    }
-
-    .brief-details{
-        font-size: 1.5rem;
     }
 }
 
