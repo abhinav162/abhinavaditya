@@ -1,0 +1,190 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: rgb(230, 230, 210); */
+    background-color: rgb(255, 255, 245);
+    color: rgb(111, 111, 111);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.navigation {
+    display: flex;
+}
+
+.logo {
+    color: rgb(68, 65, 65);
+    width: 400px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-family: 'Quantico', sans-serif;
+    letter-spacing: 0.25rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: var(--gap, 3rem);
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(111, 111, 111);
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.resume-box {
+    border: 2px solid rgb(111, 111, 111);
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+}
+
+.resume-box:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+/* Underline below navigation item */
+/* a.active{
+    text-decoration: underline 2px; 
+    text-decoration-color: rgb(209, 24, 24);
+    text-underline-offset: 0.2rem;
+} */
+
+.greetings-container {
+    display:block;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: 10rem;
+    /* margin-bottom: 10rem; */
+}
+
+.greetings-container h1{
+    font-family: 'Quantico', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.25rem;
+    font-weight: 200;
+}
+
+.name-span{
+    color: rgb(229, 118, 118);
+    font-size: 5rem;
+}
+
+.brief-details{
+    display: block;
+    font-family: 'Josefin Slab', serif;
+    color: #000;
+    font-weight: 00;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+
+.brief-details a{
+    text-decoration: none;
+    color: rgb(229, 118, 118);
+    font-weight: 600;
+}
+
+.university-name:hover{
+    font-size: 2rem;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        gap: var(--gap, 1rem);
+        font-size: 0.8rem;
+        padding: 0rem;
+    }
+
+    .logo h1 {
+        font-family: 'Quantico', sans-serif;
+        letter-spacing: 0.25rem;
+        margin: 0;
+        margin-top:1rem;
+        padding: 0;
+        font-size: 40px;
+    }
+
+    .greetings-container h1{
+        font-family: 'Quantico', sans-serif;
+        font-size: 3rem;
+        letter-spacing: 0.25rem;
+        font-weight: 200;
+    }
+
+    .name-span{
+        font-size: 4rem;
+    }
+
+    .brief-details{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo{
+        display: none;
+    }
+
+    .menu{
+        gap: var(--gap, 1rem);
+        font-size: 0.6rem;
+    }
+
+    .greetings-container h1{
+        font-family: 'Quantico', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 0.25rem;
+        font-weight: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .name-span{
+        font-size: 3rem;
+    }
+
+    .brief-details{
+        display: none;
+    }
+}
