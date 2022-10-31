@@ -169,10 +169,11 @@ body {
     color: rgb(229, 118, 118);
     background-color: rgb(254, 255, 249);
     opacity: 0.8;
+    box-shadow: 0 0 10px 0 rgba(113, 110, 110, 0.5);
 }
 
 .btn:hover {
-    transform: translateY(10%) scale(1.1);
+    transform: scale(1.1);
     border: 0px;
     transition: 0.3s;
     box-shadow: rgb(211, 211, 211) 0px 0px 20px 1px;
