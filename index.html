@@ -17,8 +17,8 @@
 
 <body>
 
-    <div id="circle" class="follow-cursor"></div>
-    <div id="circle2" class="follow-cursor2"></div>
+    <!-- <div id="cursor" class="follow-cursor"></div>
+    <div id="cursor2" class="follow-cursor2"></div> -->
 
     <header>
         <div class="top-nav">
@@ -38,24 +38,42 @@
 
     <section class="greetings">
         <div class="greetings-container">
-            <h1 class="greetings-heading">Hi there! I’m <span class="name-span">Abhinav</span> <br> Student, Programmer
-                & Graphic Designer.</h1>
+            <h1 class="greetings-heading">Hi there! <br> I’m <span class="name-span">Abhinav</span>,<br> Student,
+                Programmer & Graphic Designer.</h1>
+
+            <div id="cursor" class="follow-cursor"></div>
+            <div id="cursor2" class="follow-cursor2"></div>
         </div>
 
         <div class="brief-details">
             <p>
-                I am a student of Computer Science and Engineering at <a class="university-name" href="https://www.lpu.in/"
-                    target="_blank">Lovely Professional University</a>. I am a self-taught programmer and graphic
-                designer.
+                I am a student of Computer Science and Engineering at <a class="university-name"
+                    href="https://www.lpu.in/" target="_blank">Lovely Professional University</a>. I am a self-taught
+                programmer and graphic designer.
             </p>
         </div>
+
+
     </section>
 
     <section class="project-btn">
         <div class="project-btn-container">
-            <button class="btn">v</button>
+            <button class="btn">&darr;</button>
         </div>
     </section>
+
+
+    <!-- Script for cursor -->
+    <script>
+        var cursor = document.getElementById('cursor');
+        var cursor2 = document.getElementById('cursor2');
+        document.onmousemove = function (e) {
+            cursor.style.left = (e.pageX) + "px";
+            cursor.style.top = (e.pageY) + "px";
+            cursor2.style.left = (e.pageX) + "px";
+            cursor2.style.top = (e.pageY) + "px";
+        }
+    </script>
 </body>
 
 </html>
