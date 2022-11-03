@@ -17,8 +17,8 @@
 
 <body>
 
-    <div id="cursor" class="follow-cursor"></div>
-    <div id="cursor2" class="follow-cursor2"></div>
+    <div id="cursor" class="cursor"></div>
+    <div id="cursor2" class="cursor2"></div>
 
     <header>
         <div class="top-nav">
@@ -74,7 +74,24 @@
                 cursor2.style.transform = scale(2);
             }
         }
-    </script>
+        
+        document.addEventListener('click',() => {
+            cursor.classList.add("expand-crs");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand-crs");
+            }, 500);
+        });
+
+        document.addEventListener('click',() => {
+            cursor2.classList.add("expand-crs2");
+
+            setTimeout(() => {
+                cursor2.classList.remove("expand-crs2");
+            }, 500);
+        });
+
+        </script>
 </body>
 
 </html>
