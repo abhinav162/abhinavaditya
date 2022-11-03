@@ -17,8 +17,8 @@
 
 <body>
 
-    <!-- <div id="cursor" class="follow-cursor"></div>
-    <div id="cursor2" class="follow-cursor2"></div> -->
+    <div id="cursor" class="follow-cursor"></div>
+    <div id="cursor2" class="follow-cursor2"></div>
 
     <header>
         <div class="top-nav">
@@ -40,9 +40,6 @@
         <div class="greetings-container">
             <h1 class="greetings-heading">Hi there! <br> I’m <span class="name-span">Abhinav</span>,<br> Student,
                 Programmer & Graphic Designer.</h1>
-
-            <div id="cursor" class="follow-cursor"></div>
-            <div id="cursor2" class="follow-cursor2"></div>
         </div>
 
         <div class="brief-details">
@@ -70,8 +67,12 @@
         document.onmousemove = function (e) {
             cursor.style.left = (e.pageX) + "px";
             cursor.style.top = (e.pageY) + "px";
+            // cursor.style.transform = scale(2);
             cursor2.style.left = (e.pageX) + "px";
             cursor2.style.top = (e.pageY) + "px";
+            onclick = function () {
+                cursor2.style.transform = scale(2);
+            }
         }
     </script>
 </body>
