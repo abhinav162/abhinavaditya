@@ -34,7 +34,6 @@
 
 .expand-crs {
     animation: cursorAnim .5s forwards;
-    border: 1px solid rgb(190, 180, 180);
 }
 
 @keyframes cursorAnim {
@@ -51,7 +50,6 @@
 
 .expand-crs2 {
     animation: cursorAnim .5s forwards;
-    border: 1px solid rgb(190, 180, 180);
 }
 
 @keyframes cursorAnim2 {
