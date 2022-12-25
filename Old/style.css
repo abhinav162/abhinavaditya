@@ -258,13 +258,6 @@ a.active{
     transition: box-shadow 300ms ease, transform 300ms cubic-bezier(.567, -.379, .433, 1.317);
 }
 
-.project-container h1 {
-    font-family: 'Quantico', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 0.25rem;
-    font-weight: 200;
-}
-
 .description-card {
     border: 10px;
     border-top-left-radius: 9px;
@@ -528,37 +521,5 @@ a.active{
         font-size: 0.6rem;
         display: flex;
         justify-content: space-between;
-    }
-
-    .greetings-container h1 {
-        font-family: 'Quantico', sans-serif;
-        font-size: 2rem;
-        letter-spacing: 0.25rem;
-        font-weight: 200;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .name-span {
-        font-size: 3rem;
-    }
-
-    .brief-details {
-        display: none;
-    }
-
-    .project-btn-container {
-        display: none;
-    }
-
-    .project-container {
-        position: -ms-page;
-        /* flex-direction: column; */
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
     }
 }
