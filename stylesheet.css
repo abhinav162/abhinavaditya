@@ -7,7 +7,9 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: #f9f4ef; */
+    background-color: #fffffe;
     color: rgb(111, 111, 111);
     line-height: 1.5;
 }
@@ -295,6 +297,7 @@ a.active{
     color: rgb(71, 70, 70);
     /* margin-top: 2rem; */
     overflow-wrap: break-word;
+    text-align: center;
 }
 
 .Aboutme-desc{
@@ -302,14 +305,15 @@ a.active{
     font-size: 1.2rem;
     letter-spacing: 0.12rem;
     font-weight: 300;
-    color: rgb(71, 70, 70);
+    color: rgb(56, 56, 56);
     margin-top: 2rem;
     margin-bottom: 2rem;
     overflow-wrap: break-word; 
 }
 
 .about-card{
-    background-color: #E8EFF5;
+    /* background-color: #E8EFF5; */
+    background-color: #fffffe;
     border-radius: 9px;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -319,26 +323,75 @@ a.active{
 
 .about-card:hover{
     transform: scale(1.005);
-    box-shadow: 0px 0px 30px 10px #cacaca;
+    /* box-shadow: 0px 0px 30px 10px #E7DFC6; */
+    box-shadow: 0px 0px 30px 10px #d9e0e7;
 }
 
 .education{
-    padding-top:1rem;
-    padding-bottom: 1rem;
-    margin: 2rem;
-    border-left:3px solid rgb(71, 70, 70);
+    position: relative;
+    width: 100%;
+    padding: 1rem 8rem ;
+    height: 50vh;
+    /* margin: 2rem; */
 }
 
-.education p{
-    /* margin-bottom: 1rem; */
+.education h2{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
 }
 
 .education ul{
     margin-left: 0.6rem;
+    /* position: absolute; */
 }
 
 .education li{
-    list-style-type: "";
+    list-style:square
+}
+
+.ed{
+    width: 40%;
+    float:left
+}
+
+.sk{
+    width: 55%;
+    float: right;
+}
+
+.sk h2{
+    text-align: right;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: var(--gap, 1.5rem);
+}
+
+.skillcard{
+    /* background-color: #d7e4f2; */
+    background-color: #E8EFF5;
+    border-radius: 20px;
+    height: 96px;
+    width: 96px;
+    object-position: center;
+    padding: 0.8rem;
+    opacity: 0.85;
+}
+
+.skillcard:hover{
+    opacity: 1;
+}
+
+.skillcard img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.skillcard P{
+    text-align: center;
 }
 
 @media screen and (max-width: 1440px) {
