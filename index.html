@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="assets/Logo.ico" type="image/x-icon">
+    
 </head>
 
 <body>
@@ -35,9 +36,10 @@
         <nav class="navigation">
             <ul id="menu" class="menu">
                 <li><a class="nav-btn active" href="index.html">PORTFOLIO</a></li>
-                <li><a class="nav-btn" href="#projects">ABOUT</a></li>
+                <li><a class="nav-btn" href="about.html">ABOUT</a></li>
                 <li><a class="nav-btn" href="skills.html">SKILLS</a></li>
-                <div class="resume-box"><a href="assets/Resume.png">RESUME</a></div>
+                <div class="box-btn
+                box-btn"><a href="assets/Resume.png">RESUME</a></div>
             </ul>
         </nav>
     </div>
@@ -47,8 +49,8 @@
             Student,Programmer & Graphic Designer.</h1>
 
         <p>
-            I am a student of Computer Science and Engineering at <a href="https://www.lpu.in/"
-                target="_blank">Lovely Professional University</a>. I am a self-taught
+            I am a student of Computer Science and Engineering at <a href="https://www.lpu.in/" target="_blank">Lovely
+                Professional University</a>. I am a self-taught
             programmer and graphic designer.
         </p>
     </div>
@@ -109,24 +111,39 @@
         </div>
     </div>
 
-    <!-- <footer class="footer-container">
+    <footer class="footer-container">
+        <p>
+            I’m available for part-time roles or internships,
+            And I’m always open to speak more about my experiences,
+            portfolio pieces, and new design opportunities.
+            <br>
+            <br>
+            Let’s connect!
+        </p>
+        <div class="social-btn">
+            <a href="https://www.linkedin.com/in/abhinav-aditya/" target="_blank" class="box-btn
+            box-btn">LINKEDIN</a>
+            <a href="https://github.com/abhinav162" target="_blank" class="box-btn
+            box-btn">GITHUB</a>
+            <a href="mailto:abhinav.12106545@lpu.in" target="_blank" class="box-btn
+            box-btn">EMAIL</a>
+        </div>
+    </footer>
 
-    </footer> -->
+    <!-- Script for navbar highlight -->
+    <script>
+        var btnContainer = document.getElementById("menu");
 
-        <!-- Script for navbar highlight -->
-        <script>
-            var btnContainer = document.getElementById("menu");
-    
-            var btns = btnContainer.getElementsByClassName("nav-btn");
-    
-            for (var i = 0; i < btns.length; i++) {
-                btns[i].addEventListener("click", function () {
-                    var current = document.getElementsByClassName("active");
-                    current[0].className = current[0].className.replace(" active", "");
-                    this.className += " active";
-                });
-            }
-        </script>
+        var btns = btnContainer.getElementsByClassName("nav-btn");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
